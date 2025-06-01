@@ -1,0 +1,177 @@
+/* Animation Styles */
+
+/* Fade In */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* Slide Up */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-up {
+  animation: slideUp 0.6s ease forwards;
+}
+
+/* Slide In From Left */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.6s ease forwards;
+}
+
+/* Slide In From Right */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in-right {
+  animation: slideInRight 0.6s ease forwards;
+}
+
+/* Scale In */
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.scale-in {
+  animation: scaleIn 0.5s ease forwards;
+}
+
+/* Staggered Animations for Lists */
+.stagger-item {
+  opacity: 0;
+}
+
+.stagger-item:nth-child(1) {
+  animation: slideUp 0.5s ease forwards 0.1s;
+}
+
+.stagger-item:nth-child(2) {
+  animation: slideUp 0.5s ease forwards 0.2s;
+}
+
+.stagger-item:nth-child(3) {
+  animation: slideUp 0.5s ease forwards 0.3s;
+}
+
+.stagger-item:nth-child(4) {
+  animation: slideUp 0.5s ease forwards 0.4s;
+}
+
+.stagger-item:nth-child(5) {
+  animation: slideUp 0.5s ease forwards 0.5s;
+}
+
+.stagger-item:nth-child(6) {
+  animation: slideUp 0.5s ease forwards 0.6s;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Shimmer Effect */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--background) 0%,
+    var(--background-alt) 50%,
+    var(--background) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Rotate Animation */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: rotate 1.5s linear infinite;
+}
+
+/* Attention Grabber */
+@keyframes attention {
+  0%, 100% {
+    transform: scale(1);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: scale(0.95);
+  }
+  20%, 40%, 60%, 80% {
+    transform: scale(1.05);
+  }
+}
+
+.attention {
+  animation: attention 1s ease-in-out;
+}
