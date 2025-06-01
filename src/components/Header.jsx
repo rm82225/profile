@@ -21,7 +21,7 @@ const Header = ({ theme, toggleTheme, activeSection }) => {
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
         <a href="#" className="logo">
-          <span className="text-primary">Web</span>Developer
+          <span className="text-primary">RM</span>WEBDEVS
         </a>
 
         <nav>

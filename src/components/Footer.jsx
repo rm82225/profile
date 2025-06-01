@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-container">
           <div className="footer-column">
-            <h3>WebDeveloper</h3>
+            <h3>RM WEBDEVS</h3>
             <p className="mb-4 text-secondary">
               Creating beautiful, functional websites and web applications for businesses and individuals.
             </p>
@@ -64,14 +64,14 @@ const Footer = () => {
             <h3>Contact Info</h3>
             <ul className="footer-links">
               <li className="footer-link">San Francisco, CA</li>
-              <li className="footer-link">hello@developer.com</li>
+              <li className="footer-link">info@rmwebdevs.com</li>
               <li className="footer-link">+1 (555) 123-4567</li>
             </ul>
           </div>
         </div>
         
         <div className="footer-bottom">
-          <p>&copy; {currentYear} WebDeveloper. All rights reserved.</p>
+          <p>&copy; {currentYear} RMWebDevs. All rights reserved.</p>
         </div>
       </div>
     </footer>
